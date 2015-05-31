@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>Injecting Django into the work environment - Abdulrahman Alotaibi</title>
+
+<meta name="description" content="My talk in DjangoCon europe 2015">
+<meta name="author" content="Abdulrahman Alotaibi">
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+<link rel="stylesheet" href="lib/css/zenburn.css">
+<link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css">
+
+
+<script>
+var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+<div class="slides">
+<section>
+<h2>Injecting Django into the work environment</h2>
+<p>
+<small>by Abdulrahman Alotaibi</small>
+</p>
+</section>
+
+<section>
+<section>
+<h2>About me</h2>
+</section>
+<section>
+<h2>Linux 2008</h2>
+<h6>LAMP stack</h6>
+</section>
+<section>
+<h2>Python 2009</h2>
+<h6>diveintopython.net</h6>
+</section>
+<section>
+<h2>TWUUG and 757labs 2010</h2>
+</section>
+<section>
+<h2>Django 2011</h2>
+<h6>Snakes and Rubies</h6>
+</section>
+<section>
+<h2>PyCon 2013</h2>
+</section>
+<section>
+<h2>Graduated 2013</h2>
+<h6>Computer and Electrical engineer</h6>
+<h6>Yes, I am an engineer you can trust me <i class="fa fa-smile-o"></i><h6>
+</section>
+</section>
+
+<section>
+	<section>
+		<img src="images/kisr.png" height=200px width=300px>
+		<h2>Kuwait Institute for Scientific Research (KISR)</h2>
+	</section>
+	<section>
+<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=Kuwait%20Institute%20for%20Scientific%20Research%20(KISR)%2C%20Kuwait%20City%2C%20Al%20Asimah%2C%20Kuwait&key=AIzaSyCxxBR13uerWV_va4CzfRWkNkeWP0Ko8zw&zoom=4"></iframe> 
+	</section>
+	<section>
+		<h2>Google Developers Group Kuwait</h2>
+	</section>
+	<section>
+		<h2>Free and Open Source software</h2>
+		<h6>Nil</h6>
+	</section>
+	<section>
+		<h2>Report_v_fffffff...f.doc</h2>
+	</section>
+	<section>
+		<img src="images/neil.jpg">
+		<div>
+		<i>"In the land of the blind, the one-eyed man is king"<br> Desiderius Erasmus (1466-1536)</i>
+		</div>
+	</section>
+</section>
+
+
+
+<section>
+	<h2>Constitution</h2>
+	<ul>
+		<li style="text-align:left">Reproducibility of work.</li>
+		<li style="text-align:left">Version Control system.</li>
+		<li style="text-align:left">DBs and ORMs.</li>
+		<li style="text-align:left">Documentation software.</li>
+		<li style="text-align:left">Logging and Issue tracking</li>
+		<li style="text-align:left">Communication protocols.</li>
+	</ul>	
+	<div style="text-align:left"><a href="https://github.com/KISRDevelopment/DeveloperConstitution">Link</a></div>
+</section>
+
+<section>
+	<section>
+		<h2>Course</h2>
+		<ul>
+			<li style="text-align:left">Developers Tools</li>
+			<li style="text-align:left">Team Project Workflow</li>
+			<li style="text-align:left">Complete Web Development</li>
+		</ul>
+	</section>
+	<section>
+		<h3>Developer Tools</h3>
+		<ul>
+                	<li style="text-align:left">VirtualBox and vagrant</li>
+			<li style="text-align:left">CLI</li>
+			<li style="text-align:left">Package managers</li>
+			<li style="text-align:left">Editors and IDEs</li>
+			<li style="text-align:left">Basic web server configuration
+			<ul>
+				<li style="text-align:left">Nginx</li>
+				<li style="text-align:left">PostgreSQL</li>
+				<li style="text-align:left">Django</li>
+				<li style="text-align:left">Gunicorn</li>
+			</ul>
+			</li>
+		</ul>
+	</section>
+	<section>
+		<h3>Team Project Workflow</h3>
+		<ul>
+    			<li style="text-align:left">How to use Git and Github.com</li>
+			<li style="text-align:left">Don't be afraid to commit</li>
+		</ul>
+	</section>
+	<section>
+		<h3>Complete Web Development</h3>
+		<ul>
+			<li style="text-align:left">Ansible</li>
+			<li style="text-align:left">Toy project</li>
+		</ul>
+	</section>
+</section>
+
+<section>
+	<section>
+		<div>
+		<span id=seconds>0</span>
+		seconds later
+		</div>
+	</section>
+	<section>
+		<img src="images/new_era.png">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/aeSZaQyr1l8" frameborder="0" allowfullscreen></iframe>
+	</section>
+	<section>
+		<h2>3 Django websites</h2>
+	</section>
+	<section>
+		<h2>Django Training courses</h2>
+	</section>
+	<section>
+		<h2>"a journey of a thousand miles begins with a single step"</h2>
+		<h6>Laozi (604 BC-531 BC)</h6>
+	</section>
+</section>
+
+<section>
+	<h2>Links </h2>
+	<ul>
+		<li><i class="fa fa-github"></i>adminq80</li>
+		<li><i class="fa fa-twitter"></i>abdul_alhela</li>
+		<li>http://full-stack-development.readthedocs.org/en/latest/</li>
+		<li>https://github.com/KISRDevelopment/DeveloperConstitution</li>
+	</ul>
+</section>
+
+<section>
+	<h2>Thank you</h2>
+</section>
+
+</div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+
+Reveal.initialize({
+controls: true,
+progress: true,
+history: true,
+center: true,
+
+transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+dependencies: [
+{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+{ src: 'plugin/zoom-js/zoom.js', async: true },
+{ src: 'plugin/notes/notes.js', async: true }
+]
+});
+
+</script>
+</script>
+<script src="js/counter.js"></script>
+
+</body>
+</html>
