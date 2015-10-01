@@ -31,7 +31,7 @@ body {
   position: relative;
   line-height: 1;
   background-color: #fff;
-  color: #000; }
+  color: #ff2c2d; }
 
 /*********************************************
  * VIEW FRAGMENTS
@@ -96,12 +96,15 @@ body {
     opacity: 1;
     visibility: visible; }
 
-.reveal .slides section .fragment.highlight-red, .reveal .slides section .fragment.highlight-current-red, .reveal .slides section .fragment.highlight-green, .reveal .slides section .fragment.highlight-current-green, .reveal .slides section .fragment.highlight-blue, .reveal .slides section .fragment.highlight-current-blue {
+.reveal .slides section .fragment.highlight-red, .reveal .slides section .fragment.highlight-black,.reveal .slides section .fragment.highlight-current-red, .reveal .slides section .fragment.highlight-green, .reveal .slides section .fragment.highlight-current-green, .reveal .slides section .fragment.highlight-blue, .reveal .slides section .fragment.highlight-current-blue {
   opacity: 1;
   visibility: visible; }
 
 .reveal .slides section .fragment.highlight-red.visible {
   color: #ff2c2d; }
+.reveal .slides section .fragment.highlight-black.visible {
+ color:#000;
+}
 
 .reveal .slides section .fragment.highlight-green.visible {
   color: #17ff2e; }
