@@ -1,240 +1,248 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-<meta charset="utf-8">
+	<head>
+		<meta charset="utf-8">
 
-<title>Injecting Django into the work environment - Abdulrahman Alotaibi</title>
+		<title>Intro</title>
 
-<meta name="description" content="My talk in DjangoCon europe 2015">
-<meta name="author" content="Abdulrahman Alotaibi">
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
 
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-<link rel="stylesheet" href="css/reveal.css">
-<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+		<link rel="stylesheet" href="css/animate.css">
 
-<link rel="stylesheet" href="lib/css/zenburn.css">
-<!-- <link rel="stylesheet" href="css/font-awesome-4.3.0/css/font-awesome.min.css"> -->
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-
-
-<script>
-var link = document.createElement( 'link' );
-link.rel = 'stylesheet';
-link.type = 'text/css';
-link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-document.getElementsByTagName( 'head' )[0].appendChild( link );
-</script>
-
-<!--[if lt IE 9]>
-<script src="lib/js/html5shiv.js"></script>
-<![endif]-->
-</head>
-
-<body>
-
-<div class="reveal">
-
-<div class="slides">
-<section>
-<h2>Injecting Django into the work environment</h2>
-<p>
-<small>by Abdulrahman Alotaibi</small>
-</p>
-</section>
-
-<section>
-<p>
-All of the achievements are done with the great help of others<br> Special thanks to Abdulaziz Alsaffar and GDG Kuwait
-</p>
-</section>
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 
-<section>
-<section>
-<h2>About me</h2>
-</section>
-<section>
-<h2>Linux 2008</h2>
-<h6>LAMP stack</h6>
-</section>
-<section>
-<h2>Python 2009</h2>
-<h6>diveintopython.net</h6>
-</section>
-<section>
-<h2>TWUUG and 757labs 2010</h2>
-</section>
-<section>
-<h2>Django 2011</h2>
-<h6>Snakes and Rubies</h6>
-</section>
-<section>
-<h2>PyCon 2013</h2>
-</section>
-<section>
-<h2>Graduated 2013</h2>
-<h6>Computer and Electrical engineer</h6>
-<h6>Yes, I am an engineer you can trust me <i class="fa fa-smile-o"></i><h6>
-</section>
-</section>
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
 
-<section>
-	<section>
-		<img src="images/kisr.png" height=200px width=300px>
-		<h2>Kuwait Institute for Scientific Research (KISR)</h2>
-	</section>
-	<section>
-<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=Kuwait%20Institute%20for%20Scientific%20Research%20(KISR)%2C%20Kuwait%20City%2C%20Al%20Asimah%2C%20Kuwait&key=AIzaSyCxxBR13uerWV_va4CzfRWkNkeWP0Ko8zw&zoom=4"></iframe> 
-	</section>
-	<section>
-		<h2>Google Developers Group Kuwait</h2>
-	</section>
-	<section>
-		<h2>Free and Open Source software</h2>
-		<h6>Nil</h6>
-	</section>
-	<section>
-		<h2>Report_v_fffffff...f.doc</h2>
-	</section>
-	<section>
-		<img src="images/neil.jpg">
-		<div>
-		<i>"In the land of the blind, the one-eyed man is king"<br> Desiderius Erasmus (1466-1536)</i>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+				<section>
+					<h1>Hello</h1>
+					<p>
+						<b>Abdulrahman Alotaibi</b><br>
+						<b>RA at Kuwait Institute for Scientific Research</b>
+					</p>
+				</section>
+
+				<section>
+					<h1>Who</h1>
+					<p><i class="fa fa-bolt"></i> & <i class="fa fa-laptop"></i> engineer</p>
+					<p>FOSS <i class="fa fa-heart" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: bounceIn;"></i></p>
+					<p>Linux <i class="fa fa-heart"></i></p>
+					<p>Research <i class="fa fa-heart"></i></p>
+					<p>Entrepreneur <i class="fa fa-heart"></i></p>
+				</section>
+	
+				<section>
+				<section>
+					<section>
+						<h1>KISR</h1>
+					</section>
+				
+					<section>
+						<iframe style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJRR6SZ-mPzz8RzmYOfS6j7hA&key=AIzaSyArXX85OdE5OEreR3Tk6w38AXElVIf_SX0&zoom=4" frameborder="0" height="450" width="600"></iframe>
+					</section>
+			
+					<section>
+						<ul>
+							<li>1967</li>
+							<li>4 Areas</li>
+							<li>STS</li>
+							<li>HR</li>
+						</ul>
+					</section>
+					
+				</section>
+				<section>
+					<h1>SBC</h1>
+				</section>
+				<section>
+					<img src="assets/imgs/rpi2.jpeg"></h1>
+				</section>
+				</section>
+				
+				<section>
+					<section>
+						<h1>Why?</h1>
+					</section>
+					<section data-background="assets/imgs/old.jpg">
+					</section>
+					<section data-background="assets/imgs/jobs.jpg">
+					</section>
+					<section data-background="assets/imgs/amazon.jpg">
+					</section>
+					<section data-background="assets/imgs/eben.jpg">
+					</section>
+				</section>
+				
+				<section>
+				<!--Models-->
+					<section>
+						<h3>Model A</h3>
+						<img src="assets/imgs/a.jpg" class="stretch"/>
+					</section>
+					
+					<section>
+						<h3>Model B</h3>
+						<img src="assets/imgs/b.jpg" class="stretch"/>
+					</section>
+					
+					<section>
+						<h3>Model A+</h3>
+						<img src="assets/imgs/a_plus.jpg" class="stretch"/>
+					</section>
+					
+					<section>
+						<h3>Model B+</h3>
+						<img src="assets/imgs/b_plus.jpg" class="stretch"/>
+					</section>
+					
+					<section>
+						<h3>Raspberry Pi 2 Model B</h3>
+						<img src="assets/imgs/2b.jpg" class="stretch"/>
+					</section>
+					
+				</section>
+				
+				<section> <!--Interface-->
+						<section>
+							<h2>GUI</h2>
+						</section>
+						
+						<section>
+							<img class="stretch" src="assets/imgs/raspbian.png" />
+						</section>
+						
+						<section>
+							<img class="stretch" src="assets/imgs/scratch.png">	
+						</section>
+						
+						<section>
+							<img class="stretch" src="assets/imgs/python.png">	
+						</section>
+				</section>
+				
+				<section> <!--Projects KISR and nonKISR http://www.instructables.com-->
+						<section>
+							<h2>Users and projects</h2>	
+						</section>
+						
+						<section>	
+							<img class="stretch" src="assets/imgs/rpi_map.png">
+						</section>
+						
+						<section>
+							<img class="stretch" src="assets/imgs/Kuwait_rpi_map.png">
+						</section>
+						
+						<section>	
+							<img class="stretch" src="assets/imgs/kisr1.jpg">
+						</section>
+						
+						<section>
+							<img class="stretch" src="assets/imgs/kisr2.jpg">
+						</section>
+						
+						<section>
+							<h3>Help</h3>
+							<ul>
+								<li>GDG Kuwait</li>		
+								<li>Ada Fruit</li>		
+								<li>instructables.com</li>		
+								<li>Github</li>		
+							</ul>	
+						</section>
+				</section>
+				
+				<section>
+					
+					<section>
+						<h2>GPIO</h2>		
+						<img class="stretch" src="assets/imgs/gpio.png">
+					</section>
+	
+					<section>
+						<h2>Hello hardware demo</h2>
+					</section>
+	
+				</section>
+			
+				<section>
+					<h1>Questions?</h1>
+					<p>Happy hacking</p>
+				</section>
+				<!--
+				<section>
+					What's is a raspberry pi?<br>
+					Who created it and Why?<br>
+					Models of Raspberry PI<br>
+					Projects KISR and nonKISR<br>
+					PINs to use<br>
+					Map of users<br>
+					Demo<br>
+				</section>
+				-->
+			</div>
+
 		</div>
-	</section>
-</section>
 
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
 
+		<script>
 
-<section>
-	<h2>Constitution</h2>
-	<ul>
-		<li style="text-align:left">Reproducibility of work.</li>
-		<li style="text-align:left">Version Control system.</li>
-		<li style="text-align:left">DBs and ORMs.</li>
-		<li style="text-align:left">Documentation software.</li>
-		<li style="text-align:left">Logging and Issue tracking</li>
-		<li style="text-align:left">Communication protocols.</li>
-	</ul>	
-	<div style="text-align:left"><a href="https://github.com/KISRDevelopment/DeveloperConstitution">Link</a></div>
-</section>
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
 
-<section>
-	<section>
-		<h2>Courses</h2>
-		<ul>
-			<li style="text-align:left">Developers Tools</li>
-			<li style="text-align:left">Team Project Workflow</li>
-			<li style="text-align:left">Complete Web Development</li>
-		</ul>
-	</section>
-	<section>
-		<h3>Developer Tools</h3>
-		<ul>
-                	<li style="text-align:left">VirtualBox and vagrant</li>
-			<li style="text-align:left">CLI</li>
-			<li style="text-align:left">Package managers</li>
-			<li style="text-align:left">Editors and IDEs</li>
-			<li style="text-align:left">Basic web server configuration
-			<ul>
-				<li style="text-align:left">Nginx</li>
-				<li style="text-align:left">PostgreSQL</li>
-				<li style="text-align:left">Django</li>
-				<li style="text-align:left">Gunicorn</li>
-			</ul>
-			</li>
-		</ul>
-	</section>
-	<section>
-		<h3>Team Project Workflow</h3>
-		<ul>
-    			<li style="text-align:left">How to use Git and Github.com</li>
-			<li style="text-align:left">Don't be afraid to commit</li>
-		</ul>
-	</section>
-	<section>
-		<h3>Complete Web Development</h3>
-		<ul>
-			<li style="text-align:left">Ansible</li>
-			<li style="text-align:left">Toy project</li>
-		</ul>
-	</section>
-</section>
+				transition: 'concave', // none/fade/slide/convex/concave/zoom
 
-<section>
-	<section>
-		<div>
-		<span id=seconds>0</span>
-		seconds later
-		</div>
-	</section>
-	<section>
-		<img src="images/new_era.png">
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/aeSZaQyr1l8" frameborder="0" allowfullscreen></iframe>
-	</section>
-	<section>
-		<h2>3 Django websites</h2>
-	</section>
-	<section>
-		<h2>Django Training course</h2>
-	</section>
-	<section>
-		<h2>"a journey of a thousand miles begins with a single step"</h2>
-		<h6>Laozi (531 BC - 604 BC)</h6>
-	</section>
-</section>
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
 
-<section>
-	<h2>Links </h2>
-	<ul>
-		<li><i class="fa fa-github"></i>adminq80</li>
-		<li><i class="fa fa-twitter"></i>@abdul_alhela</li>
-		<li>http://full-stack-development.readthedocs.org/en/latest/</li>
-		<li>https://github.com/KISRDevelopment/DeveloperConstitution</li>
-	</ul>
-</section>
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+		<script>
+		(function(){
+			new WOW().init();
+		})();
+		</script>
 
-<section>
-	<h2>Thank you</h2>
-	<p>https://adminq80.github.io/</p>
-</section>
-
-</div>
-
-</div>
-
-<script src="lib/js/head.min.js"></script>
-<script src="js/reveal.js"></script>
-
-<script>
-
-Reveal.initialize({
-controls: true,
-progress: true,
-history: true,
-center: true,
-
-transition: 'convex', // none/fade/slide/convex/concave/zoom
-
-dependencies: [
-{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-{ src: 'plugin/zoom-js/zoom.js', async: true },
-{ src: 'plugin/notes/notes.js', async: true }
-]
-});
-
-</script>
-</script>
-<script src="js/counter.js"></script>
-
-</body>
+	</body>
 </html>
